@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="stylesheet" href="./assets/css/responsive.css">
+
+  <title>Frontend Mentor | Age calculator app</title>
+
+</head>
+
+<body>
+  <main class="age-calculator">
+    <div class="form-section">
+      <form class="input-form">
+        <div class="days">
+          <label class="label" id="label-day" for="day">Day</label>
+          <input required maxlength="2" id="day-input" type="number" name="day" placeholder="DD">
+          <small class="error" id="error-day"></small>
+        </div>
+        <div class="months">
+          <label class="label" id="label-month" for="month">Month</label>
+          <input required maxlength="2" id="month-input" type="number" name="month" placeholder="MM">
+          <small class="error" id="error-month"></small>
+        </div>
+        <div class="years">
+          <label class="label" id="label-year" for="year">Year</label>
+          <input required maxlength="4" id="year-input" type="number" name="year" placeholder="YYYY">
+          <small class="error" id="error-year"></small>
+        </div>
+      </form>
+    </div>
+    <div class="submit-section">
+      <div class="line"></div>
+      <button type="submit" id="submit"><img src="./assets/images/icon-arrow.svg" alt="Arrow button image"></button>
+      <div class="line2"></div>
+    </div>
+    <div class="results-section">
+      <h2 class="results"><span id="years">--</span> year<span id="years-s-span" class="single">s</span></h2>
+      <h2 class="results"><span id="months">--</span> month<span id="months-s-span" class="single">s</span></h2>
+      <h2 class="results"><span id="days">--</span> day<span id="days-s-span" class="single">s</span></h2>
+    </div>
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    <br>Coded by <a href="https://github.com/Gielth">Gielth</a>.
+  </footer>
+  <script src="./assets/js/scripts.js"></script>
+</body>
+
+</html>

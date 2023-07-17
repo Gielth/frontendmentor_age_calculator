@@ -1,0 +1,119 @@
+
+
+/* ### Primary
+
+- Purple: hsl(259, 100%, 65%)
+- Light red: hsl(0, 100%, 67%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Off white: hsl(0, 0%, 94%)
+- Light grey: hsl(0, 0%, 86%)
+- Smokey grey: hsl(0, 1%, 44%)
+- Off black: hsl(0, 0%, 8%)
+*/
+
+
+@media (max-width: 840px) {
+    .age-calculator {
+        width: 560px;
+    }
+
+    .age-calculator .form-section .input-form .days input,
+    .age-calculator .form-section .input-form .months input,
+    .age-calculator .form-section .input-form .years input {
+        width: 8rem;
+    }
+
+    .age-calculator .submit-section .line {
+        padding: 0 13rem;
+    }
+
+    .age-calculator .results-section .results {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 570px) {
+    .age-calculator {
+        width: 420px;
+    }
+
+    .age-calculator .form-section .input-form {
+        flex-wrap: wrap;
+        padding: .2rem;
+    }
+
+    .age-calculator .form-section .input-form .days,
+    .age-calculator .form-section .input-form .months,
+    .age-calculator .form-section .input-form .years {
+        padding: .3rem;
+    } 
+
+    .age-calculator .form-section .input-form .days input,
+    .age-calculator .form-section .input-form .months input,
+    .age-calculator .form-section .input-form .years input {
+        width: 7.3rem;
+    }
+
+    .age-calculator .submit-section .line {
+        padding: 0 5rem;
+    }
+
+    .age-calculator .submit-section .line2 {
+        border: 1px solid hsl(0, 0%, 86%);
+        padding: 0 5rem;
+        height: 1px;
+        align-self: center;
+    }
+
+    .age-calculator .submit-section button {
+        align-self: center;
+    }
+
+    .age-calculator .results-section .results {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .age-calculator {
+        width: 360px;
+    }
+
+    .age-calculator .form-section .input-form {
+        flex-wrap: wrap;
+        padding: .1rem;
+    }
+
+    .age-calculator .form-section .input-form .days,
+    .age-calculator .form-section .input-form .months,
+    .age-calculator .form-section .input-form .years {
+        padding: .3rem;
+    } 
+
+    .age-calculator .form-section .input-form .days input,
+    .age-calculator .form-section .input-form .months input,
+    .age-calculator .form-section .input-form .years input {
+        width: 6rem;
+        font-size: 16px;
+    }
+
+    .age-calculator .submit-section .line, .age-calculator .submit-section .line2 {
+        padding: 0 4rem;
+    }
+
+    .age-calculator .submit-section button {
+        align-self: center;
+    }
+
+    .age-calculator .submit-section button img {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+
+    .age-calculator .results-section .results {
+        font-size: 2.5rem;
+    }
+}

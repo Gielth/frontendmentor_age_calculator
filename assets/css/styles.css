@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+
+body {
+    background-color: hsl(0, 0%, 86%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.age-calculator {
+    background-color: hsl(0, 0%, 100%);
+    width: 720px;
+    border-radius: 1rem;
+    padding: 1rem;
+    border-bottom-right-radius: 10rem;
+}
+
+.age-calculator .form-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.age-calculator .form-section .input-form {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+}
+
+.age-calculator .form-section .input-form .days,
+.age-calculator .form-section .input-form .months,
+.age-calculator .form-section .input-form .years {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.age-calculator .form-section .input-form .days .label,
+.age-calculator .form-section .input-form .months .label,
+.age-calculator .form-section .input-form .years .label {
+    text-transform: uppercase;
+    font-size: .7rem;
+    padding: .5rem;
+    color: hsl(0, 1%, 44%);
+    font-weight: 400;
+}
+
+.age-calculator .form-section .input-form .days input,
+.age-calculator .form-section .input-form .months input,
+.age-calculator .form-section .input-form .years input {
+    font-size: 32px;
+    width: 9rem;
+    padding: .5rem;
+    border-radius: .5rem;
+    border: .1rem solid hsl(0, 0%, 86%);
+    margin-top: .15rem;
+    font-weight: bold;
+    color: hsl(0, 0%, 8%);
+}
+
+.age-calculator .form-section .input-form .days .label.error,
+.age-calculator .form-section .input-form .months .label.error,
+.age-calculator .form-section .input-form .years .label.error {
+    color: hsl(0, 100%, 67%);
+}
+
+.age-calculator .form-section .input-form .days .error,
+.age-calculator .form-section .input-form .months .error,
+.age-calculator .form-section .input-form .years .error{
+    color: hsl(0, 100%, 67%);
+    font-size: .6rem;
+    padding: .5rem;
+}
+
+.age-calculator .form-section .input-form .days input:hover,
+.age-calculator .form-section .input-form .months input:hover,
+.age-calculator .form-section .input-form .years input:hover {
+    cursor: pointer;
+}
+
+.age-calculator .form-section .input-form .days input:invalid,
+.age-calculator .form-section .input-form .months input:invalid,
+.age-calculator .form-section .input-form .years input:invalid,
+.age-calculator .form-section .input-form .days input:out-of-range,
+.age-calculator .form-section .input-form .months input:out-of-range,
+.age-calculator .form-section .input-form .years input:out-of-range {
+    border-color: hsl(0, 100%, 67%);
+}
+
+.age-calculator .submit-section {
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: center;
+}
+
+.age-calculator .submit-section .line {
+    border: 1px solid hsl(0, 0%, 86%);
+    padding: 0 17.5rem;
+    height: 1px;
+    align-self: center;
+}
+
+.age-calculator .submit-section button {
+    background-color: hsl(259, 100%, 65%);
+    border: none;
+    justify-content: center;
+    align-content: center;
+    border-radius: 50%;
+    padding: .8rem;
+}
+
+.age-calculator .submit-section button:hover {
+    background-color: hsl(0, 0%, 8%);
+    cursor: pointer;
+}
+
+.age-calculator .submit-section button img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.age-calculator .results-section {
+    padding-bottom: 1rem;
+}
+
+.age-calculator .results-section .results {
+    font-size: 5rem;
+    padding: 0 3rem;
+    line-height: 5rem;
+    font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    color: hsl(0, 0%, 8%);
+}
+
+.age-calculator .results-section .results span {
+    color: hsl(259, 100%, 65%);
+}
+
+.age-calculator .results-section .results span.single {
+    color: hsl(0, 0%, 8%);
+}
+
+.age-calculator .results-section .results span.single.hidden {
+    color: hsl(0, 0%, 100%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

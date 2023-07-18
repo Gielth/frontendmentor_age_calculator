@@ -155,7 +155,7 @@ function calculateAge() {
         }
     } else if (months === 1) {
         singleMonth.classList.add('hidden');
-    } else if (days > 1 && singleMonth.classList.contains('hidden')) {
+    } else if (months > 1 && singleMonth.classList.contains('hidden')) {
         singleMonth.classList.remove('hidden');
     }
 
